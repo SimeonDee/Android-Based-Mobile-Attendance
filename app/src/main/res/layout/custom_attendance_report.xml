@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_marginTop="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@android:color/holo_blue_bright">
+
+    <TextView
+        android:id="@+id/tvSNumber"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="121"/>
+
+    <ImageView
+        android:id="@+id/imgPspt"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fedpoffa_logo"/>
+
+    <TextView
+        android:id="@+id/tvMt"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="CS/HND/F17/1778"/>
+
+    <TextView
+        android:id="@+id/tvAtt"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:background="@color/colorAccent"
+        android:text="140"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestPictureRetrievalActivity">
+
+    <ImageView
+        android:id="@+id/imgSrc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btBrowseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Picture"
+        android:paddingBottom="20dp"
+        android:onClick="btBrowseImage"/>
+
+    <Button
+        android:id="@+id/btConvertToByteArray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Picture"
+        android:paddingBottom="20dp"
+        android:onClick="btConvertToByteArray"/>
+
+    <ImageView
+        android:id="@+id/imgDestination"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btConvertByteToImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Image From Array"
+        android:paddingBottom="20dp"
+        android:onClick="btConvertByteToImage"/>
+
+    <TextView
+        android:id="@+id/tvByteArray"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+</LinearLayout>

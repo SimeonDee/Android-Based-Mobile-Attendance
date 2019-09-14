@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="customColorPrimaryDark">#8B0000</color>
+    <color name="customColorPrimary">#B22222</color>
+    <color name="myTextColor">#FFFFFF</color>
+    <color name="myBackgroundColor">#aaaafa</color>
+    <color name="shadowColor">#ff1a1a</color>
+
+    <color name="customColorPrimaryDark2">#660000</color>
+    <color name="customColorPrimary2">#800000</color>
+    <color name="customColorAccent2">#8000ff</color>
+    <!--<color name="customTextColor2">#ffffff</color>-->
+    <color name="customBackgroundColor2">#ff4000</color>
+
+    <color name="passportBackgroundColor">@android:color/holo_blue_light</color>
+
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Mobile Attendance</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username (Matric No / Staff ID)</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="action_register">Next ->></string>
+    <string name="sign_up_activity_label">Register User</string>
+    <string name="sign_in_activity_label">Sign In</string>
+    <string name="register_details_activity_label">Bio-Data Registration</string>
+    <string name="student_course_reg_activity_label">Course Registration</string>
+    <string name="add_new_course_activity_label">New Course</string>
+    <string name="passport_upload_label">Upload Passport</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="error_no_passport_selected">Please select your passport</string>
+    <string name="lecturer_menu_label">Lecturer Menu</string>
+    <string name="action_confirm_password">Confirm Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="project_title">Mobile Attendance System for Android Devices</string>
+    <string name="attendance_query">Attendance Query</string>
+
+    <array name="user_category">
+        <item>--select user type--</item>
+        <item>Student</item>
+        <item>Staff</item>
+        <item>Admin</item>
+    </array>
+
+    <array name="faculty">
+        <item>--select faculty--</item>
+        <item>Applied Science</item>
+        <item>Business Management</item>
+        <item>Communications</item>
+        <item>Engineering</item>
+        <item>Environmental</item>
+        <item>General Studies</item>
+        <item>ICT Center</item>
+    </array>
+
+    <array name="department">
+        <item>--select department--</item>
+    </array>
+    <array name="level">
+        <item>--select level--</item>
+        <item>ND I (F/T)</item>
+        <item>ND YR I (P/T)</item>
+        <item>ND II (F/T)</item>
+        <item>ND YR II (P/T)</item>
+        <item>ND YR III (P/T)</item>
+        <item>HND I (F/T)</item>
+        <item>HND II (F/T)</item>
+    </array>
+
+    <array name="semester">
+        <item>--select semester--</item>
+        <item>First</item>
+        <item>Second</item>
+    </array>
+</resources>

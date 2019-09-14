@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:id="@+id/tablerow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:weightSum="7"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvSN"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvMat"
+            android:layout_column="2"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="CS/HND/F17/1900"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/chkAttend"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </TableRow>
+</TableLayout>

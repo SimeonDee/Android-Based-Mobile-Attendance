@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@color/myBackgroundColor"
+    tools:context="com.example.simeon_dee.mobileattendance.AttendanceActivity">
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="ATTENDANCE SHEET FOR "
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lstCategory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp" />
+
+
+    <Button
+        android:id="@+id/btSaveAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:onClick="submitButtonHandler"
+        android:text="Save Attendance"/>
+
+
+</LinearLayout>

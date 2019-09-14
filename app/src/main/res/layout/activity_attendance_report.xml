@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackgroundColor"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.simeon_dee.mobileattendance.AttendanceReport">
+
+    <TextView
+        android:id="@+id/tvHeading"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:shadowColor="@color/customColorAccent2"
+        android:shadowRadius="3"
+        android:text="ATTENDANCE REPORT FOR COM 121 BETWEEN 2007/12/12 AND 2008/11/02"
+        android:textColor="#960300" />
+
+         <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:padding="8dp"
+            android:weightSum="11">
+
+            <TextView
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="S/N"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Passport"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_column="3"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Matric"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_column="4"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Attend"
+                android:textSize="20sp" />
+
+
+        </TableRow>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btExit"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:text="Exit"
+        android:onClick="exitButtonClickHandler"/>
+
+
+</TableLayout>

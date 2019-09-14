@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_inner_margin"
+    android:layout_marginBottom="@dimen/default_inner_margin"
+    android:background="@android:color/holo_blue_bright">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:weightSum="7">
+
+            <TextView
+                android:id="@+id/tvSN"
+                android:layout_width="0dp"
+                android:layout_column="1"
+                android:layout_weight="0.5"
+                android:text="11"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/chkSelectCourse"
+                android:layout_width="0dp"
+                android:layout_column="2"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvCod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:text="COM 123"
+                android:textAlignment="center"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tvTit"
+                android:layout_width="0dp"
+                android:layout_column="4"
+                android:layout_weight="4"
+                android:text="INTRO TO COMPUTER"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvUni"
+                android:layout_width="0dp"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:text="4"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

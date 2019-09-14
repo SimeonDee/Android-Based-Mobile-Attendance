@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/myBackgroundColor"
+    tools:context="com.example.simeon_dee.mobileattendance.AttendanceReportQueryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinRepFac"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/faculty"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+            <Spinner
+                android:id="@+id/spinRepDept"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/department"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/spinRepLev"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/level"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/spinRepSes"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/spinRepSem"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/semester"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"></Spinner>
+
+            <Button
+                android:id="@+id/btRepLoadLecturerCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="btLoadLecturerCoursesHandler"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Load My Courses" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRepContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Get Attendance Report for:" />
+
+                <Spinner
+                    android:id="@+id/spinRepLoadedCourses"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"></Spinner>
+
+                <CheckBox
+                    android:id="@+id/chkDateRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:checked="false"
+                    android:text="Specify Date Range" />
+
+                <LinearLayout
+                    android:id="@+id/linearDateQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="From Date:" />
+
+
+                        <DatePicker
+                            android:id="@+id/dtpFromDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:datePickerMode="spinner" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="To Date:" />
+
+                        <DatePicker
+                            android:id="@+id/dtpToDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:datePickerMode="spinner" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:onClick="btContinueClickHandler"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Continue =>" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

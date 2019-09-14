@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/myBackgroundColor"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.example.simeon_dee.mobileattendance.StudentCoureRegQueryActivity">
+
+    <!--&lt;!&ndash; Login progress &ndash;&gt;-->
+    <!--<ProgressBar-->
+        <!--android:id="@+id/login_progress"-->
+        <!--style="?android:attr/progressBarStyleLarge"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Faculty:"-->
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinFac"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:entries="@array/faculty"></Spinner>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Department:"-->
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinDept"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:entries="@array/department"></Spinner>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Level:"-->
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />-->
+    <Spinner
+        android:id="@+id/spinLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/level"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"></Spinner>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Session:"-->
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />-->
+    <Spinner
+        android:id="@+id/spinSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"></Spinner>
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Semester:"-->
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />-->
+    <Spinner
+        android:id="@+id/spinSemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/semester"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"></Spinner>
+
+    <Button
+        android:id="@+id/btLoadCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="loadCoursesButtonHandler"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Load Courses" />
+
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/login_form"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:padding="8dp">-->
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="2,3"
+            android:stretchColumns="2,3">
+
+            <TableRow android:weightSum="7">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_column="1"
+                    android:layout_weight="0.5" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_column="2"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:text="CODE"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_column="4"
+                    android:layout_weight="4"
+                    android:text="TITLE"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_column="5"
+                    android:layout_weight="1"
+                    android:text="UNIT"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+
+        <ListView
+            android:id="@+id/lstCourses"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btRegisterNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent"
+            android:onClick="registerCoursesButtonHandler"
+            android:padding="8dp"
+            android:text="Register Courses"
+            android:textStyle="bold" />
+
+
+    <!--</ScrollView>-->
+</LinearLayout>

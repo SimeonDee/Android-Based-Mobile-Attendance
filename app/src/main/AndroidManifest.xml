@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.simeon_dee.mobileattendance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AttendanceActivity"
+            android:parentActivityName=".LecturerAttendanceQuery" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/sign_in_activity_label"
+            android:roundIcon="@drawable/fedpoffa_logo" />
+        <activity
+            android:name=".RegisterUserActivity"
+            android:label="@string/sign_up_activity_label"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".StudentDetailsRegActivity"
+            android:label="@string/register_details_activity_label" />
+        <activity
+            android:name=".StudentCoureRegQueryActivity"
+            android:label="@string/student_course_reg_activity_label" />
+        <activity
+            android:name=".PassportUploadActivity"
+            android:label="@string/passport_upload_label" />
+        <activity
+            android:name=".AddCourseActivity"
+            android:label="@string/add_new_course_activity_label"
+            android:parentActivityName=".AdminMenu" />
+        <activity
+            android:name=".LecturerMenuActivity"
+            android:label="@string/lecturer_menu_label"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".LecturerAttendanceQuery"
+            android:label="@string/attendance_query"
+            android:parentActivityName=".LecturerMenuActivity" />
+        <activity
+            android:name=".AttendanceReportQueryActivity"
+            android:parentActivityName=".LecturerMenuActivity" />
+        <activity android:name=".AttendanceReport" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminMenu"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".ReportIndividualDetailsActivity"
+            android:parentActivityName=".AttendanceReport" />
+        <activity android:name=".TestPictureRetrievalActivity">
+
+        </activity>
+    </application>
+
+</manifest>
